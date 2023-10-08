@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
+
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <!-- <script src="API.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="overlay"> </div>
+        <img src="background.jpg" alt="">
+    </div>
+    <div class="cities-option">
+        <div class="choose">
+            <select id="cities-select">
+
+            </select>
+        </div>
+        <!-- /* Start Box Dtate */ -->
+        <div class="container-data-box">
+            <div class="box-data">
+                <i class=" icon fa-solid fa-location-dot"></i>
+                <h1 id="citiy-name">جازان</h1>
+                <h3 id="date">26/8/2023</h3>
+            </div>
+        </div>
+        <!-- /* End Box Dtate */ -->
+        <!-- Start Prayers Container -->
+        <div id="prayers-container">
+            <div id="prayers" style="text-align:center;">
+                <table id="prayer">
+                    <tr>
+                        <td>الفجر</td>
+                        <td id="fajr-time">4:30</td>
+                    </tr>
+                    <div class="line-1"></div>
+                    <tr>
+                        <td>الشروق</td>
+                        <td id="sunrise-time">4:30</td>
+                    </tr>
+                    <div class="line-2"></div>
+                    <tr>
+                        <td>الظهر</td>
+                        <td id="dhurh-time">4:30</td>
+                    </tr>
+                    <div class="line-3"></div>
+                    <tr>
+                        <td>العصر</td>
+                        <td id="Asr-time">4:30</td>
+                    </tr>
+                    <div class="line-4"></div>
+                    <tr>
+                        <td>المغرب</td>
+                        <td id="Sunset-time">4:30</td>
+                    </tr>
+                    <div class="line-5"></div>
+                    <tr>
+                        <td>العشاء</td>
+                        <td id="Isha-time">4:30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- End Prayers Container -->
+
+</body>
+<script src="API.js"></script>
+
+</html>

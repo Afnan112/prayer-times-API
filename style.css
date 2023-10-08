@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    direction: rtl;
+    font-family: 'Markazi Text', serif;
+}
+
+.container img {
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.container .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(209 173 173 /77%);
+    z-index: 1;
+}
+
+/* Start Dropdown */
+
+select {
+    /* Reset Select */
+    appearance: none;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 5px;
+    /* Text color */
+    color: #331D2C;
+    /* Dropdown color */
+    background-color: #FAF1E4;
+    background-image: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    outline: none;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select wrapper */
+.choose {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+
+/* Arrow */
+.choose::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    /* Square color */
+    background-color: #FDC2B1;
+    transition: .25s all ease;
+    color: #FFF6DC;
+    pointer-events: none;
+}
+
+/* Transition */
+.choose:hover::after {
+    color: #C4C1A4;
+}
+
+
+.cities-option {
+    position: absolute;
+    bottom: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+/* End Dropdown */
+/* Start Box Dtate */
+.container-data-box {
+    position: absolute;
+    top: 50%;
+    left: -12%;
+    margin-top: 50px;
+    width: 400px;
+    height: 160px;
+    border-radius: 15px;
+    background-color: #FDC2B1;
+}
+
+
+.box-data h1 {
+    padding-right: 25px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.box-data h3 {
+    padding-right: 20px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.icon {
+    font-size: 25px;
+    color: #FAF1E4;
+    position: relative;
+    right: 350px;
+    top: 17px;
+}
+
+/* End Box Dtate */
+/* Start Box Prayer */
+#prayers-container {
+    max-width: 100vh;
+    position: absolute;
+    top: 50%;
+    left: -12%;
+    margin-top: 230px;
+    width: 400px;
+    height: 640px;
+    border-radius: 15px;
+    background-color: #FAF1E4;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 400;
+    border-spacing: 0 60px;
+}
+
+td {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.line-1,
+.line-2,
+.line-3,
+.line-4,
+.line-5 {
+    height: 1px;
+    width: 350px;
+    background: silver;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.line-1 {
+    position: relative;
+    top: 118px;
+    right: 0;
+}
+
+.line-2 {
+    position: relative;
+    top: 216px;
+    right: 0;
+}
+
+.line-3 {
+    position: relative;
+    top: 319px;
+    right: 0;
+}
+
+.line-4 {
+    position: relative;
+    top: 410px;
+    right: 0;
+}
+
+.line-5 {
+    position: relative;
+    top: 503px;
+    right: 0;
+}
+
+/* End Box Prayer */
